@@ -4,6 +4,7 @@
   "description": "This is a simple web-based RPG dice roller application. It allows users to select and roll various types of dice commonly used in role-playing games.",
   "main": "app.js",
   "scripts": {
+    "build": "node app.js",
     "start": "node app.js"
   },
   "repository": {
