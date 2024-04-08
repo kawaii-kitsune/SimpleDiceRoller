@@ -25,6 +25,11 @@ function updateSelectedDiceDisplay() {
 }
 
 function rollDice() {
+    if (selectedDice.length === 0) {
+        alert("Please add dice to roll.");
+        return;
+    }
+
     rolls = [];
     selectedDice.forEach(diceType => {
         const rollResult = Math.floor(Math.random() * parseInt(diceType.slice(1)) + 1);
