@@ -1,0 +1,22 @@
+{
+  "name": "diceroller",
+  "version": "1.0.0",
+  "description": "This is a simple web-based RPG dice roller application. It allows users to select and roll various types of dice commonly used in role-playing games.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kawaii-kitsune/SimpleDiceRoller.git"
+  },
+  "author": "kawaii_kitsune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawaii-kitsune/SimpleDiceRoller/issues"
+  },
+  "homepage": "https://github.com/kawaii-kitsune/SimpleDiceRoller#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
