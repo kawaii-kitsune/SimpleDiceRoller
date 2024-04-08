@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RPG Dice Roller</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="https://unpkg.com/nes.icons@3.0.0-beta.3/css/nes-icons.min.css" rel="stylesheet">
+    <!-- core style only -->
+
+    <style>
+        html,
+        body,
+        pre,
+        code,
+        kbd,
+        samp {
+            font-family: "Press Start 2P";
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="nes-container with-title is-centered">RPG DICE ROLLER</h1>
+    <div class="nes-container with-title is-centered">
+        <p class="title">Welcome to the RPG Dice Roller</p>
+        <div class="nes-container with-title is-centered" style="margin: 5%;">
+            <p class="title">Have a great time Using this App</p>
+            <p>Use the arrows to find the dice you want.</p>
+            <p>Press + to add it to your list of dice. </p>
+            <p>Press - to remove it from your list of dice. </p>
+            <p>Press <i class="nes-icon is-small ban"></i> to clear your list of dice. </p>
+            <p>Press <i class="nes-icon is-small check"></i> to roll your dice. </p>
+            <p> Have fun! </p>
+        </div>
+        <div id="dice-container" class="nes-container with-title is-centered">
+            <button id="prev-dice" class="nes-btn"><i class="nes-icon caret-left "></i></button>
+            <div id="dice" class="nes-container is-dark dice-icon"><i class="nes-icon is-medium heart"></i></div>
+            <button id="next-dice" class="nes-btn"><i class="nes-icon caret-right"></i></button>
+            <div id="dice-selection" class="nes-container with-title is-centered">
+    
+            </div>
+        </div>
+        <div id="controls">
+            <button id="add-dice" class="nes-btn is-primary">+</button>
+            <button id="remove-dice" class="nes-btn is-primary">-</button>
+        </div>
+        <div id="controls">
+            <button id="clear-dice" class="nes-btn is-error"><i class="nes-icon is-medium ban"></i></button>
+            <button id="roll-dice" class="nes-btn is-success"><i class="nes-icon is-medium check"></i></button>
+        </div>
+        <div id="roll-result" class="lists">
+            <ul class="nes-list is-disc" id="roll-list"></ul>
+        </div>
+    
+        <div class="nes-balloon from-left">
+            <!-- <i class="nes-kirby"></i> -->
+            <p>Thank you for using this</p>
+            <p><i class="nes-icon github-square"></i> <a href="https://github.com/kawaii-kitsune" target="_blank"
+                    rel="noopener noreferrer">@kawaii-kitsune</a></p>
+        </div>
+    </div>
+    
+
+
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
