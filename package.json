@@ -4,8 +4,8 @@
   "description": "This is a simple web-based RPG dice roller application. It allows users to select and roll various types of dice commonly used in role-playing games.",
   "main": "app.js",
   "scripts": {
-    "minify-js": "uglifyjs src/*.js -o dist/script.min.js --compress",
-    "minify-css": "cssnano src/*.css dist/style.min.css",
+    "minify-js": "uglifyjs public/*.js -o dist/script.min.js --compress",
+    "minify-css": "cssnano public/*.css dist/style.min.css",
     "build": "npm run minify-js && npm run minify-css",
     "dev": "nodemon app.js",
     "start": "node app.js"
