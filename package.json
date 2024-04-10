@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "minify-js": "uglifyjs public/*.js -o dist/script.min.js --compress",
-    "minify-css": "cssnano public/*.css dist/style.min.css",
     "build": "npm run minify-js && npm run minify-css",
     "dev": "nodemon app.js",
     "start": "node app.js"
@@ -22,12 +21,9 @@
   "homepage": "https://github.com/kawaii-kitsune/SimpleDiceRoller#readme",
   "dependencies": {
     "express": "^4.19.2",
-    "nodemon": "^3.1.0",
-    "cssnano": "^6.1.2",
-    "uglify-js": "^3.17.4"
+    "nodemon": "^3.1.0"
   },
   "devDependencies": {
-    "cssnano": "^6.1.2",
     "uglify-js": "^3.17.4"
   }
 }
