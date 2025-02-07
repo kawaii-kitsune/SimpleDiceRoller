@@ -50,13 +50,13 @@ function displayRollResults() {
     rollResultElement.textContent = "Roll Results:";
 
     rolls.forEach((roll, index) => {
-        var li = document.createElement('li');
+        let li = document.createElement('li');
         li.innerHTML = `<img src="${imagePaths[selectedDice[index]]}" alt="${selectedDice[index]}" style="width: 50px; height: 50px;"> ${selectedDice[index]}: ${roll}`;
         rollResultElement.appendChild(li);
     });
 
     const totalSum = rolls.reduce((acc, curr) => acc + curr, 0);
-    var liSum = document.createElement('li');
+    let liSum = document.createElement('li');
     liSum.textContent = `Total Sum: ${totalSum}`;
     rollResultElement.appendChild(liSum);
 }
