@@ -50,3 +50,52 @@ button:hover {
 }
 
 
+html, body, pre, code, kbd, samp {
+    font-family: "Press Start 2P", cursive;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#controls {
+    margin: 10px 0;
+}
+
+#roll-result {
+    margin-top: 20px;
+}
+
+.nes-balloon {
+    margin-top: 20px;
+}
+
+.nes-btn {
+    margin: 5px;
+}
+@keyframes roll-animation {
+0% { transform: rotate(0deg); }
+25% { transform: rotate(90deg); }
+50% { transform: rotate(180deg); }
+75% { transform: rotate(270deg); }
+100% { transform: rotate(360deg); }
+}
+
+.rolling {
+animation: roll-animation 1s ease-in-out;
+}
