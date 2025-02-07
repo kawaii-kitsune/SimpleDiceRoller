@@ -1,5 +1,5 @@
 const diceList = ["D4", "D6", "D8", "D10", "D12", "D20"];
-const imagePaths = { "D4": "./dice.svg/icons/000000/transparent/1x1/skoll/d4.svg", "D6": "./dice.svg/icons/000000/transparent/1x1/delapouite/perspective-dice-six.svg", "D8": "./dice.svg/icons/000000/transparent/1x1/delapouite/dice-eight-faces-eight.svg", "D10": "./dice.svg/icons/000000/transparent/1x1/skoll/d10.svg", "D12": "./dice.svg/icons/000000/transparent/1x1/skoll/d12.svg", "D20": "./dice.svg/icons/000000/transparent/1x1/delapouite/dice-twenty-faces-twenty.svg" };
+const imagePaths = { "D4": "/public/dice.svg/icons/000000/transparent/1x1/skoll/d4.svg", "D6": "/public/dice.svg/icons/000000/transparent/1x1/delapouite/perspective-dice-six.svg", "D8": "/public/dice.svg/icons/000000/transparent/1x1/delapouite/dice-eight-faces-eight.svg", "D10": "/public/dice.svg/icons/000000/transparent/1x1/skoll/d10.svg", "D12": "/public/dice.svg/icons/000000/transparent/1x1/skoll/d12.svg", "D20": "/public/dice.svg/icons/000000/transparent/1x1/delapouite/dice-twenty-faces-twenty.svg" };
 let selectedDiceIndex = 0;
 let selectedDice = [];
 let rolls = [];
