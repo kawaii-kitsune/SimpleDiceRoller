@@ -1,1 +1,20 @@
-{ "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ],
+    "redirects": [
+        {
+            "source": "/public/dice.png/(.*)",
+            "destination": "/404",
+            "statusCode": 404
+        },
+        {
+            "source": "/public/dice.svg/(.*)",
+            "destination": "/404",
+            "statusCode": 404
+        }
+    ]
+}
